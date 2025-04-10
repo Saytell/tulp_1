@@ -30,9 +30,14 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       body: _screens[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed, // добавляем, т.к. 4 элемента
+        type: BottomNavigationBarType.fixed,
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
+        selectedItemColor:
+            const Color.fromARGB(255, 15, 184, 176), // цвет активного
+        unselectedItemColor:
+            const Color.fromARGB(255, 61, 34, 24), // неактивного
+        backgroundColor: const Color.fromARGB(161, 209, 223, 19), // фон меню
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.history),

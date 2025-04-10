@@ -13,7 +13,7 @@ class ProTranslatorApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MainScreen(), // теперь главный экран — это экран с нижним меню
+      home: MainScreen(), 
     );
   }
 }
